@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Classes</title>
+    <link rel="stylesheet" href="../css/HeaderAndFooter.css">
+    <link rel="stylesheet" href="../css/ClassesPage.css">
+    <script type = "text/javascript" src="../js/General.js"></script>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+
+<body class="body_Classes" onload="class_option1()" >
+
+    <div class="TopNavigationBar" id="TopNav" dir="rtl">
+        <button id="openbtn" class="openbtn" onclick="openNav()"> <img class="top_nav_btn" id="openbtn_img" src="../img/nativBar.png"  style="width: 40px";  ></button>
+        <button class="shoppingCartbtn" onclick="window.location.href='./ShoppingCartPage.html'" > <img class="top_nav_btn" id="shoppingCartbtn_img" src="../img/shoppingBag.png" style="width: 40px"; > </button>
+        <button class="classesbtn" onclick="window.location.href='./ClassesPage.html'"> <img class="top_nav_btn" id="classes_img" src="../img/classIcon.png" style="width: 40px" ></button>
+        <button class="deliverybtn" onclick="window.location.href='./DeliveriesPage.html'">  <img class="top_nav_btn" id="delivery_img" src="../img/delivery.png" style="width: 40px" > </button>
+        <button class="SignInbtn" onclick="window.location.href='./SignInPage.html'" >  <img class="top_nav_btn" id="aboutUs_img" class="SignIn_img" src="../img/logInIcon.png" style="width: 40px"  > </button>
+ 
+         <div id="logo_in_the_side">
+           <a href="./HomePage.html"><img id="S_B nav logo" src="../img/ShokoBox logo .png" alt="shoko box logo" height="180px"></a>
+         </div>
+     </div>
+ 
+ 
+     <div class="sideNavigationBar" id="sideNavigationBar" dir="ltr">
+         <br><br>
+         <a id="X" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9746;</a>
+         <a href="./HomePage.html" >  ראשי</a>
+         <a href="./CakesPage.html" >  העוגות שלי</a>
+         <a href="./CustomizedCakePage.html"> עיצוב אישי</a>
+         <a href="./ClassesPage.html">  סדנאות </a>
+         <a href="./QuestionPage.html">  שאלות תשובות </a>
+         <a href="./ContactPage.html">  צור קשר </a>
+         <a href="./AboutUsPage.html">  אודות </a>
+     </div>
+
+
+    <div class="main" id="main" dir="rtl">
+        <div class="header">
+            <h1> הסדנאות שלי </h1>
+        </div>
+
+        <table width="60%"  border="0" align="center">
+            <tr align="center">
+                <td width="20%" height="150%" >
+                    <p class="title_name"> סדנת זילוף </p>
+                </td>
+                <td width="20%" >
+                    <p class="title_name"> עוגות בחושות </p> 
+                </td>
+                <td width="20%" height="150%"  >
+                    <p class="title_name"> המיוחדים שלי </p> 
+                </td>
+            </tr>
+            <tr align="center" >
+                <td>
+                    <video width="320" height="240" controls>
+                        <source src="../video/zilof.mp4" type="video/mp4">
+                    </video>
+                </td>
+                <td>
+                    <video width="320" height="240" controls>
+                        <source src="../video/bhosot.mp4" type="video/mp4">
+                    </video>
+                </td>
+                <td>
+                    <video width="320" height="240" controls>
+                        <source src="../video/ourspaciel.mp4" type="video/mp4">
+                    </video>
+                </td>
+
+            </tr>
+            <tr align="center">
+                <td >
+                    <div class="popup" onclick="popupFunction('text1')">לחץ כאן 
+                        <span class="popuptext" id="text1">
+                             בסדנת הזילוף נלמד את הטכניקות החדישות לייצור עוגה מושלמת, קרם חזק ויציב, מתכון ושימוש בתבניות שונות. <br> 
+                            הדרכה מלאה בת 4 שעות אשר בסיומה יוצאים עם עוגה מקושטת וטעימה.
+                        </span>
+                    </div>
+                </td>
+                <td>
+                    <div class="popup" onclick="popupFunction('text2')">לחץ כאן  
+                        <span class="popuptext" id="text2">
+                             תמיד אהבתם איכות? הגעתם למקום נכון! <br>
+                             בואו להכין איתי עוגה טעימה ומרשימה, אחת כזאת שאי אפשר להסביר במילים את הטעם שלה... <br>
+                             הדרכה מלאה בת 4 שעות.
+                        </span>
+                    </div>
+                </td>
+                <td>
+                    <div class="popup" onclick="popupFunction('text3')">לחץ כאן  
+                        <span class="popuptext" id="text3">
+                            בכיוון של משהו מושחת? הגעתם למקום הנכון! <br>
+                            מזמינה אותכם לסדנא בה תכירו את השגעונות שלי מקרוב, ותצאו עם קינוחים מרשימים. <br>
+                            סדנה בת 4 שעות בה תצאו עם קופסת ההפתעות שלי. <br>
+                        </span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table width="60%" id=sec_table border="0" align="center">
+            <tr align="center">
+                <td>
+                    <p id="title_name"> קביעת סדנאות לחודש הקרוב <br>
+                        <form name="form1" id="form1" action="/todo" method="get">
+                            סוג סדנא: <select name="subject" id="subject">
+                            <option value="" selected="selected">בחר סדנא</option>
+                            </select>
+                            <br><br>
+                            תאריך: <select name="date" id="date">
+                              <option value="" selected="selected">בחר תאריך</option>
+                            </select>
+                            <br><br>
+                            שעה: <select name="hours" id="hours">
+                              <option value="" selected="selected">בחר שעה</option>
+                            </select>
+                            <br><br>
+                            <button class="sub_btn" type="submit" id="next_class"> שלח </button>
+                          </form>
+                    </p>
+
+                </td>
+                <td>
+                    <p id="title_name"> מעוניין בתיאום סדנא אישית? <br>
+                        השאר פרטים ונחזור אליך בהקדם
+                    </p>
+                    <form name="form2" id="form2" action="/todo" method="get">
+                        <label for="fullname">שם מלא   <i class="fa fa-user"></i> </label> <br><br>
+                        <input type="text" id="fullname" name="fullname" placeholder="ישראלי ישראל *" required> <br><br>
+                        <label for="phone">טלפון   <i class="fa fa-phone"></i> </label><br><br>
+                        <input type="text" id="phone" name="phone" placeholder="0505555555 *" required><br><br>
+                        <button class="sub_btn" type="submit" id="personal_class" onclick="validateClassesForm()"> שלח </button>  <br>
+                    </form>
+
+                </td>
+            </tr>
+        </table>
+
+        
+     </div>
+
+
+     <footer id="footer" class="footer">
+        <br>
+
+        <a href="./AboutUsPage.html" class="footer_text" > <b> אודות </b> </a> <br><br>
+
+        <a href="./ContactPage.html" class="footer_text" > <b> צור קשר </b> </a> <br><br>
+        
+        <div id= "Insta">
+            <a target="_blank" href="https://www.instagram.com/roy_avigdorov/" class="footer_text" > <b> @shoko_box     </b></a> <img src="../img/instagram.png" alt="instagram" style="width: 20px;"></a>    
+        </div>    
+         
+
+    </footer>
+
+
+</body>
+</html>

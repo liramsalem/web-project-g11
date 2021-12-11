@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Cakes</title>
+    <link rel="stylesheet" href="../css/HeaderAndFooter.css">
+    <link rel="stylesheet" href="../css/CakesPage.css">
+    <script type = "text/javascript" src="../js/General.js"></script>
+    <script type = "text/javascript" src="../js/cakePage.js"></script>
+  </head>
+
+<body class="body_Cakes" >
+
+    <div class="TopNavigationBar" id="TopNav" dir="rtl">
+        <button id="openbtn" class="openbtn" onclick="openNav()"> <img class="top_nav_btn" id="openbtn_img" src="../img/nativBar.png"  style="width: 40px";  ></button>
+        <button class="shoppingCartbtn" onclick="window.location.href='./ShoppingCartPage.html'" > <img class="top_nav_btn" id="shoppingCartbtn_img" src="../img/shoppingBag.png" style="width: 40px"; > </button>
+        <button class="classesbtn" onclick="window.location.href='./ClassesPage.html'"> <img class="top_nav_btn" id="classes_img" src="../img/classIcon.png" style="width: 40px" ></button>
+        <button class="deliverybtn" onclick="window.location.href='./DeliveriesPage.html'">  <img class="top_nav_btn" id="delivery_img" src="../img/delivery.png" style="width: 40px" > </button>
+        <button class="SignInbtn" onclick="window.location.href='./SignInPage.html'" >  <img class="top_nav_btn" id="aboutUs_img" class="SignIn_img" src="../img/logInIcon.png" style="width: 40px"  > </button>
+ 
+         <div id="logo_in_the_side">
+           <a href="./HomePage.html"><img id="S_B nav logo" src="../img/ShokoBox logo .png" alt="shoko box logo" height="180px"></a>
+         </div>
+     </div>
+ 
+ 
+     <div class="sideNavigationBar" id="sideNavigationBar" dir="ltr">
+         <br><br>
+         <a id="X" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9746;</a>
+         <a href="./HomePage.html" >  ראשי</a>
+         <a href="./CakesPage.html" >  העוגות שלי</a>
+         <a href="./CustomizedCakePage.html"> עיצוב אישי</a>
+         <a href="./ClassesPage.html">  סדנאות </a>
+         <a href="./QuestionPage.html">  שאלות תשובות </a>
+         <a href="./ContactPage.html">  צור קשר </a>
+         <a href="./AboutUsPage.html">  אודות </a>
+     </div>
+
+
+    <div class="main" id="main" dir="rtl">
+        <div class="header">
+            <h1> העוגות שלי </h1>
+        </div>
+
+        <div id="myBtnContainer">
+            <button class="btn_filter active" onclick="filterSelection('all')"> הראה הכל</button>
+            <button class="btn_filter" onclick="filterSelection('pass')"> עוגות פס</button>
+            <button class="btn_filter" onclick="filterSelection('mos-krem')"> עוגות מוס-קרם</button>
+            <button class="btn_filter" onclick="filterSelection('cokis')"> עוגיות </button>
+        </div>
+
+                <div class="row">
+                    <div class="column cokis">
+                        <div class="content">
+                            <a href="./ProductPageAlphahores.html" > <img class="product_pic" src="../img/cakes_cokis1.webp" alt="alphahores" style="width:100%"> </a>
+                            <h4 class="name"> האלפחורס המושלמות -38 ₪</h4>
+                            <div class="btn-group">
+                                <form action="/todo" method="get"></form>
+                                    <label for="quantity">כמות:  </label>
+                                    <input type="number"  class="quantity" name="quantity" min="1" max="" value="1"> <br><br>
+                                    <button class="add_to_cart_btn" type="submit"> הוספה לסל</button> <br><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column cokis">
+                        <div class="content">
+                            <a href="./ProductPageChocolate_chips.html" ><img class="product_pic" src="../img/cakes_cokis2.webp" alt="chocolate_chips" style="width:100%"> </a>
+                            <h4 class="name"> עוגיות שוקולד צ'יפס -35 ₪</h4>
+                            <div class="btn-group">
+                                <form action="/todo" method="get"></form>
+                                    <label for="quantity">כמות:  </label>
+                                    <input type="number"  class="quantity" name="quantity" min="1" max="" value="1"> <br><br>
+                                    <button class="add_to_cart_btn" type="submit"> הוספה לסל</button> <br><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column cokis">
+                        <div class="content">
+                            <a href="./ProductPageMacaroni.html" > <img class="product_pic" src="../img/macaroni.jpeg" alt="cokis3" style="width:100%"> </a>
+                            <h4 class="name"> מקרוני שקיעה -50 ₪</h4>
+                            <div class="btn-group">
+                                <form action="/todo" method="get"></form>
+                                    <label for="quantity">כמות:  </label>
+                                    <input type="number"  class="quantity" name="quantity" min="1" max="" value="1"> <br><br>
+                                    <button class="add_to_cart_btn" type="submit"> הוספה לסל</button> <br><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="column mos-krem">
+                        <div class="content">
+                            <a href="./ProductPageCheeseMous.html" > <img class="product_pic" src="../img/cakes_mos-krem1.webp" alt="cheese_mos" style="width:100%"> </a>
+                            <h4 class="name"> מוס גבינה פירות יער -129 ₪</h4>
+                            <div class="btn-group">
+                                <form action="/todo" method="get"></form>
+                                    <label for="quantity">כמות:  </label>
+                                    <input type="number"  class="quantity" name="quantity" min="1" max="" value="1"> <br><br>
+                                    <button class="add_to_cart_btn" type="submit"> הוספה לסל</button> <br><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column mos-krem">
+                        <div class="content">
+                            <a href="./ProductPageChocolateMous.html" ><img class="product_pic" src="../img/cakes_mos-krem2.webp" alt="chocolate_mos" style="width:100%"> </a>
+                            <h4 class="name"> מוס חגיגת שוקולדים -165 ₪</h4>
+                            <div class="btn-group">
+                                <form action="/todo" method="get"></form>
+                                    <label for="quantity">כמות:  </label>
+                                    <input type="number"  class="quantity" name="quantity" min="1" max="" value="1"> <br><br>
+                                    <button class="add_to_cart_btn" type="submit"> הוספה לסל</button> <br><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column mos-krem">
+                        <div class="content">
+                            <a href="./ProductPageItalianMous.html" > <img class="product_pic" src="../img/cakes_mos-krem3.webp" alt="italian_mos" style="width:100%"></a>
+                            <h4 class="name"> מוס טירמיסו איטלקי -165 ₪</h4>
+                            <div class="btn-group">
+                                <form action="/todo" method="get"></form>
+                                    <label for="quantity">כמות:  </label>
+                                    <input type="number"  class="quantity" name="quantity" min="1" max="" value="1"> <br><br>
+                                    <button class="add_to_cart_btn" type="submit"> הוספה לסל</button> <br><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="column pass">
+                        <div class="content">
+                            <a href="./ProductPageFruitPie.html" > <img class="product_pic" src="../img/cakes_pass1.jpg" alt="fruit_pie" style="width:100%"></a>
+                            <h4 class="name"> סטריפ פאי פירות מלכותי -68 ₪</h4>
+                            <div class="btn-group">
+                                <form action="/todo" method="get"></form>
+                                    <label for="quantity">כמות:  </label>
+                                    <input type="number"  class="quantity" name="quantity" min="1" max="" value="1"> <br><br>
+                                    <button class="add_to_cart_btn" type="submit"> הוספה לסל</button> <br><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column pass">
+                        <div class="content">
+                            <a href="./ProductPagekranchSkedim.html" > <img class="product_pic" src="../img/cakes_pass2.jpg" alt="kranchSkedimCake" style="width:100%"></a>
+                            <h4 class="name"> קראנץ שקדים -44 ₪</h4>
+                            <div class="btn-group">
+                                <form action="/todo" method="get"></form>
+                                    <label for="quantity">כמות:  </label>
+                                    <input type="number"  class="quantity" name="quantity" min="1" max="" value="1"> <br><br>
+                                    <button class="add_to_cart_btn" type="submit"> הוספה לסל</button> <br><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column pass">
+                        <div class="content">
+                            <a href="./ProductPagekranchSmarim.html" > <img Class="product_pic" src="../img/kranchSmarim.jpeg" alt="pass3" style="width:100%"> </a>
+                            <h4 class="name"> קראנץ שמרים -60 ₪</h4>
+                            <div class="btn-group">
+                                <form action="/todo" method="get"></form>
+                                    <label for="quantity">כמות:  </label>
+                                    <input type="number"  class="quantity" name="quantity" min="1" max="" value="1"> <br><br>
+                                    <button class="add_to_cart_btn" type="submit"> הוספה לסל</button> <br><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    
+
+
+        
+     </div>
+
+
+     <footer id="footer" class="footer">
+        <br>
+
+        <a href="./AboutUsPage.html" class="footer_text" > <b> אודות </b> </a> <br><br>
+
+        <a href="./ContactPage.html" class="footer_text" > <b> צור קשר </b> </a> <br><br>
+        
+        <div id= "Insta">
+            <a target="_blank" href="https://www.instagram.com/roy_avigdorov/" class="footer_text" > <b> @shoko_box     </b></a> <img src="../img/instagram.png" alt="instagram" style="width: 20px;"></a>    
+        </div>    
+         
+
+    </footer>
+
+
+</body>
+</html>

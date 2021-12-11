@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../css/HeaderAndFooter.css">
+    <link rel="stylesheet" href="../css/ShoppingCartPage.css">
+    <script type = "text/javascript" src="../js/General.js"></script>
+   
+    </head>
+ 
+<body class="body_Shopping Cart">
+
+   
+    <div class="TopNavigationBar" id="TopNav" dir="rtl">
+        <button id="openbtn" class="openbtn" onclick="openNav()"> <img class="top_nav_btn" id="openbtn_img" src="../img/nativBar.png"  style="width: 40px";  ></button>
+        <button class="shoppingCartbtn" onclick="window.location.href='./ShoppingCartPage.html'" > <img class="top_nav_btn" id="shoppingCartbtn_img" src="../img/shoppingBag.png" style="width: 40px"; > </button>
+        <button class="classesbtn" onclick="window.location.href='./ClassesPage.html'"> <img class="top_nav_btn" id="classes_img" src="../img/classIcon.png" style="width: 40px" ></button>
+        <button class="deliverybtn" onclick="window.location.href='./DeliveriesPage.html'">  <img class="top_nav_btn" id="delivery_img" src="../img/delivery.png" style="width: 40px" > </button>
+        <button class="SignInbtn" onclick="window.location.href='./SignInPage.html'" >  <img class="top_nav_btn" id="aboutUs_img" class="SignIn_img" src="../img/logInIcon.png" style="width: 40px"  > </button>
+ 
+         <div id="logo_in_the_side">
+           <a href="./HomePage.html"><img id="S_B nav logo" src="../img/ShokoBox logo .png" alt="shoko box logo" height="180px"></a>
+         </div>
+     </div>
+ 
+ 
+     <div class="sideNavigationBar" id="sideNavigationBar" dir="ltr">
+         <br><br>
+         <a id="X" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9746;</a>
+         <a href="./HomePage.html" >  ראשי</a>
+         <a href="./CakesPage.html" >  העוגות שלי</a>
+         <a href="./CustomizedCakePage.html"> עיצוב אישי</a>
+         <a href="./ClassesPage.html">  סדנאות </a>
+         <a href="./QuestionPage.html">  שאלות תשובות </a>
+         <a href="./ContactPage.html">  צור קשר </a>
+         <a href="./AboutUsPage.html">  אודות </a>
+     </div>
+
+
+    <div class="main" id="main" dir="rtl">
+
+        <div class="header">
+            <h1> עגלת קניות </h1>
+        </div>
+
+            <table class="table" id="ShopCart" width="100%"  border="1" align="center">
+                <tr>
+                    <th class="table" width="20%"> <label class="col">תמונה</label> </th>
+                    <th class="table" width="40%" > <label class="col" id="pd_t">מוצר</label> </th>
+                    <th class="table" width="10%" > <label class="col">מחיר</label> </th>
+                    <th class="table" width="15%" > <label class="col">כמות</label> </th>
+                    <th class="table" width="15%" > <label class="col">הסר</label> </th>
+                </tr>
+                <tr>
+                    <td align="center"> <br>
+                        <img class="shop_pic_items" class="ShopPicCart" src="../img/macaroni.jpeg" alt="product1" width="30% "height= "10%">
+                    </td>
+                    <td class="headerCart"><div class="product-title">מקרוני שקיעה</div>
+                                <p class="product-description">7 זוגות מקרונים בטעמי תות, שקדים, לימון, בורלה, פסיפלורה ושוקלד בלונדי</p></td>
+                    <td class="headerCart price"><div class="product-price">50.00</div></td>
+                    <td align="center">
+                        <input type="number" class="quantity-field" id="quantity1"  min="1" max=""   value="1" step="1"> <br><br>
+                    </td>
+                    <td align="center">
+                        <button class="ShopPicCart deleteButton"> הסר</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"> <br>
+                       <img class="shop_pic_items" class="ShopPicCart" src="../img/kranchSmarim.jpeg" alt="product1" width="30% "height= "10%">
+                   </td>
+                   <td class="headerCart"><div class="product-title">עוגת קראנץ שמרים</div>
+                               <p class="product-description">7סוגי שוקולד ופרלינים טעימים עם קרם ביאנה מעל</p></td>
+                   <td class="headerCart price"><div class="product-price">60.00</div></td>
+                   <td align="center">
+                    <input type="number" class="quantity-field" id="quantity2"  min="1" max=""   value="1" step="1"> <br><br>
+                   </td>
+                   <td align="center">
+                       <button class="ShopPicCart deleteButton"> הסר</button>
+                   </td>
+               </tr>
+            </table>
+        </div>
+        <br><br>
+
+
+          <div class="totals" dir="rtl">
+            <table width="16%"  border="0" align="left">
+                <tr>
+                  <td width="8%" align="center"><p class= "sum_text" > סיכום ביניים</p></td>
+                  <td width="8%" ><p class="total-price-text" id="totalPriceText">110.00 ₪</p>
+                    <input type="hidden" name="totalPrice" id="totalPrice" value="0" />
+                  </td>
+                </tr>
+                <tr>
+                  <td> <label class= "sum_text">מע"מ 17%</label> </td>
+                  <td><p class="tax-price-text" id="taxPriceText">18.70 ₪</p>
+                    <input type="hidden" name="taxtotalPrice" id="taxtotalPrice" value="0" />
+                   </td>
+                </tr>
+                <tr>
+                  <td> <label class= "sum_text" >משלוח</label> </td>
+                  <td><p class="delivries-price-text" id="delivriesPriceText">35.00 ₪</p>
+                  </td>
+                </tr>
+                <tr>
+                    <td> <label class= "sum_text" >סה"כ</label> </td>
+                    <td><p class="final-price-text" id="finalPriceText">163.70 ₪</p>
+                        <input type="hidden" name="finaltotalPrice" id="finaltotalPrice" value="0" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"> <button class="checkout" onclick="window.location.href='./CheckOutPage.html'" >מעבר לתשלום</button> </td>
+                </tr>
+            </table> 
+          </div>
+
+          <br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+     <footer id="footer" class="footer">
+        <br>
+
+        <a href="./AboutUsPage.html" class="footer_text" > <b> אודות </b> </a> <br><br>
+
+        <a href="./ContactPage.html" class="footer_text" > <b> צור קשר </b> </a> <br><br>
+        
+        <div id= "Insta">
+            <a target="_blank" href="https://www.instagram.com/roy_avigdorov/" class="footer_text" > <b> @shoko_box     </b></a> <img src="../img/instagram.png" alt="instagram" style="width: 20px;"></a>    
+        </div>    
+         
+
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Customize Page</title>
+    <link rel="stylesheet" href="../css/HeaderAndFooter.css">
+    <link rel="stylesheet" href="../css/CustomizedCakePage.css">
+    <script type = "text/javascript" src="../js/General.js"></script>
+</head>
+
+<body class="body_Customized_Cake">
+
+   
+    <div class="TopNavigationBar" id="TopNav" dir="rtl">
+        <button id="openbtn" class="openbtn" onclick="openNav()"> <img class="top_nav_btn" id="openbtn_img" src="../img/nativBar.png"  style="width: 40px";  ></button>
+        <button class="shoppingCartbtn" onclick="window.location.href='./ShoppingCartPage.html'" > <img class="top_nav_btn" id="shoppingCartbtn_img" src="../img/shoppingBag.png" style="width: 40px"; > </button>
+        <button class="classesbtn" onclick="window.location.href='./ClassesPage.html'"> <img class="top_nav_btn" id="classes_img" src="../img/classIcon.png" style="width: 40px" ></button>
+        <button class="deliverybtn" onclick="window.location.href='./DeliveriesPage.html'">  <img class="top_nav_btn" id="delivery_img" src="../img/delivery.png" style="width: 40px" > </button>
+        <button class="SignInbtn" onclick="window.location.href='./SignInPage.html'" >  <img class="top_nav_btn" id="aboutUs_img" class="SignIn_img" src="../img/logInIcon.png" style="width: 40px"  > </button>
+ 
+         <div id="logo_in_the_side">
+           <a href="./HomePage.html"><img id="S_B nav logo" src="../img/ShokoBox logo .png" alt="shoko box logo" height="180px"></a>
+         </div>
+     </div>
+ 
+ 
+     <div class="sideNavigationBar" id="sideNavigationBar" dir="ltr">
+         <br><br>
+         <a id="X" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9746;</a>
+         <a href="./HomePage.html" >  ראשי</a>
+         <a href="./CakesPage.html" >  העוגות שלי</a>
+         <a href="./CustomizedCakePage.html"> עיצוב אישי</a>
+         <a href="./ClassesPage.html">  סדנאות </a>
+         <a href="./QuestionPage.html">  שאלות תשובות </a>
+         <a href="./ContactPage.html">  צור קשר </a>
+         <a href="./AboutUsPage.html">  אודות </a>
+     </div>
+
+
+    <div class="main" id="main" dir="rtl">
+
+        <div class="header" >
+            <h1>עוגה בעיצוב אישי </h1>
+            <p>מחירי בסיס: <br>
+                300 ש"ח לקומה אחת <br>
+                400 ש"ח לשתי קומות <br>
+                500 ש"ח לשלוש קומות <br>
+            </p>
+        </div>
+
+        <form  id="customizedform" action="/todo" method="get">
+            <table width="80%"  border="0" align="center">
+                <tr align="center">
+                    <td><p class="title_name"> צורה </p></td>
+                    <td><p class="title_name"> תוספות </p></td>
+                    <td><p class="title_name"> טעם הקרם </p></td>
+                    <td><p class="title_name"> כיתוב </p></td>
+                    <td><p class="title_name"> גודל </p></td>
+
+                </tr>
+                <tr align="center">
+                    <td><img class="icone" src ="../img/shape_icon_customizesPage.png" alt="cake's shape" style="width: 100px; float: center;" ></td>
+                    <td><img class="icone" src ="../img/extra_icon_customizesPage.png" alt="cake's extra" style="width: 100px; float: center;" ></td>
+                    <td><img class="icone" src ="../img/taste_icon_customizesPage.png" alt="cake's taste" style="width: 100px; float: center;" ></td>
+                    <td><img class="icone" src ="../img/caption_icon_customizesPage.png" alt="cake's caption" style="width: 100px; float: center;"></td>
+                    <td><img class="icone" src ="../img/size_icon_customizesPage.png" alt="cake's size" style="width: 100px; float: center;" > </td>
+                </tr>
+                <tr  >
+                    <td width="20%" height="150%" align="center">
+                        <div class="Option">
+                            <input type="radio" id="love" name="shape" value="love">
+                            <label for="love">לב</label><br>
+                            <input type="radio" id="circle" name="shape" value="circle">
+                            <label for="circle">עיגול</label><br>
+                            <input type="radio" id="square" name="shape" value="square"> 
+                            <label for="square">ריבוע</label><br>
+                        </div>  
+                    </td>
+                    <td width="20%" align="center">
+                        <div class="Option">
+                            <input type="radio"  name="extra" value="candy">
+                            <label for="candy">סוכיות צבעוניות</label><br>
+                            <input type="radio" name="extra" value="sugar_dough">
+                            <label for="sugar_dough">קישוטי בצק סוכר</label><br>
+                            <input type="radio" name="extra" value="chocolate"> 
+                            <label for="chocolate">שוקולדים</label><br> 
+                        </div>        
+                    </td>
+                    <td width="20%" height="150%" align="center" >  
+                        <div class="Option">
+                            <input type="radio" name="taste" value="vanile">
+                            <label for="vanile">וניל</label><br>
+                            <input type="radio" name="taste" value="frute">
+                            <label for="frute">פירות</label><br>
+                            <input type="radio" name="taste" value="straw"> 
+                            <label for="straw">תות</label><br>
+                            <input type="radio" name="taste" value="chocolate1"> 
+                            <label for="chocolate1">שוקולד</label><br> 
+                            <input type="radio" name="taste" value="fistuk"> 
+                            <label for="fistuk">פיסטוק</label><br>
+                        </div>     
+                    </td>
+                    <td width="20%" height="150%" align="center" >  
+                        <div class="Option">
+                            <input type="radio" name="caption" value="hebrew">
+                            <label for="hebrew">עברית</label><br>
+                            <input type="radio" name="caption" value="english">
+                            <label for="english">אנגלית</label><br>
+                        </div>   
+                    </td>
+                    <td width="20%" height="150%" align="center" > 
+                        <div class="Option">
+                            <input type="radio" name="size" value="hebrew">
+                            <label for="hebrew">קומה אחת</label><br>
+                            <input type="radio" name="size" value="english">
+                            <label for="english">2 קומות</label><br>
+                            <input type="radio" name="size" value="english">
+                            <label for="english">3 קומות</label><br>
+                        </div>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" align="center">
+                        <p class="title_name" >כתבו לנו:</p>
+                        <textarea id="textarea_contact" name="comment" cols="70" rows="10" placeholder="כאן המקום לכתוב רגישות לאלרגיות, הכיתוב של התמונה וכל בקשה מיוחדת..." dir="rtl"></textarea><br><br>
+                        <button type="submit" class="btn"> הוספה לסל </button> 
+                    </td>   
+            </tr>
+        </table>
+    </form>
+
+
+                <div class="gallery">
+                        <div class= "image-box">
+                            <img src="../img/customizedPage1.jpeg" style="width: 200px; ">
+                        </div>
+                        <div class= "image-box">
+                            <img src="../img/customizedPage2.jpeg" style="width: 200px; ">
+                        </div>
+                        <div class= "image-box">
+                            <img src="../img/customizedPage3.jpeg" style="width: 200px; ">
+                        </div>
+                        <div class= "image-box">
+                            <img src="../img/customizedPage4.jpeg" style="width: 200px; ">
+                        </div>
+                        <div class= "image-box">
+                            <img src="../img/customizedPage5.jpeg" style="width: 200px; ">
+                        </div>
+                    </div>
+    </div>
+
+      
+  
+     <footer id="footer" class="footer">
+        <br>
+
+        <a href="./AboutUsPage.html" class="footer_text" > <b> אודות </b> </a> <br><br>
+
+        <a href="./ContactPage.html" class="footer_text" > <b> צור קשר </b> </a> <br><br>
+        
+        <div id= "Insta">
+            <a target="_blank" href="https://www.instagram.com/roy_avigdorov/" class="footer_text" > <b> @shoko_box     </b></a> <img src="../img/instagram.png" alt="instagram" style="width: 20px;"></a>    
+        </div>    
+         
+
+    </footer>
+
+
+
+</body>
+</html>

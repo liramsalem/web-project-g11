@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/HeaderAndFooter.css">
+    <link rel="stylesheet" href="../css/RegisterPage.css">
+    <script type = "text/javascript" src="../js/General.js"></script>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<body class="body_Register">
+
+   
+    <div class="TopNavigationBar" id="TopNav" dir="rtl">
+        <button id="openbtn" class="openbtn" onclick="openNav()"> <img class="top_nav_btn" id="openbtn_img" src="../img/nativBar.png"  style="width: 40px";  ></button>
+        <button class="shoppingCartbtn" onclick="window.location.href='./ShoppingCartPage.html'" > <img class="top_nav_btn" id="shoppingCartbtn_img" src="../img/shoppingBag.png" style="width: 40px"; > </button>
+        <button class="classesbtn" onclick="window.location.href='./ClassesPage.html'"> <img class="top_nav_btn" id="classes_img" src="../img/classIcon.png" style="width: 40px" ></button>
+        <button class="deliverybtn" onclick="window.location.href='./DeliveriesPage.html'">  <img class="top_nav_btn" id="delivery_img" src="../img/delivery.png" style="width: 40px" > </button>
+        <button class="SignInbtn" onclick="window.location.href='./SignInPage.html'" >  <img class="top_nav_btn" id="aboutUs_img" class="SignIn_img" src="../img/logInIcon.png" style="width: 40px"  > </button>
+ 
+         <div id="logo_in_the_side">
+           <a href="./HomePage.html"><img id="S_B nav logo" src="../img/ShokoBox logo .png" alt="shoko box logo" height="180px"></a>
+         </div>
+     </div>
+ 
+ 
+     <div class="sideNavigationBar" id="sideNavigationBar" dir="ltr">
+         <br><br>
+         <a id="X" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9746;</a>
+         <a href="./HomePage.html" >  ראשי</a>
+         <a href="./CakesPage.html" >  העוגות שלי</a>
+         <a href="./CustomizedCakePage.html"> עיצוב אישי</a>
+         <a href="./ClassesPage.html">  סדנאות </a>
+         <a href="./QuestionPage.html">  שאלות תשובות </a>
+         <a href="./ContactPage.html">  צור קשר </a>
+         <a href="./AboutUsPage.html">  אודות </a>
+     </div>
+    <br><br><br>
+
+    <div class="main" id="main" >
+    <table width="100%"  border="0" align="center">
+        <tr >
+            <td width="45%" height="150%" align="center">
+                <img src="../img/Welcome-PNG.png"; style="width: 60%"  >
+                <h1>הירשם עכשיו</h1>
+                <h2> :) כל כך שמחה שאתה פה! בוא נתחיל </h2>
+            </td>
+            <td width="10%"></td>
+            <td width="45%" height="150%">
+                <form id="registerform" action="/todo" method="post" >
+                    <div class="input-container">
+                      <i class="fa fa-user icon"></i>
+                      <input class="input-field" id="fname" type="text" placeholder="* שם פרטי" name="firstnm" required>
+                    </div>
+    
+                    <div class="input-container">
+                        <i class="fa fa-user icon"></i>
+                        <input class="input-field" id="lname" type="text"  placeholder="* שם משפחה" name="lastnm" required>
+                    </div>
+    
+                    <div class="input-container">
+                        <i class="fa fa-birthday-cake icon"></i>
+                        <input class="input-field" type="date" placeholder="יום הולדת" name="birthday">
+                    </div>
+    
+                    <div class="input-container">
+                        <i class="fa fa-phone icon"></i>
+                        <input class="input-field" id="phone" type="phone" placeholder="פלאפון" name="phone">
+                    </div>
+                  
+                    <div class="input-container">
+                      <i class="fa fa-envelope icon"></i>
+                      <input class="input-field" id="email"  type="text" placeholder="* אימייל" name="email" required>
+                    </div>
+                  
+                    <div class="input-container">
+                      <i class="fa fa-key icon"></i>
+                      <input class="input-field" id="password" type="password" placeholder="* סיסמא" name="psw" required>
+                    </div>
+                    </form>
+
+                    <button onclick="validateRegisterForm()" class="btn"> <b> הירשם </b></button>
+            </td>
+        </tr>
+    </table>
+   </div>
+
+
+    <div id="footer" class="footer">
+
+        <br>
+
+        <a href="./AboutUsPage.html" class="footer_text" > <b> אודות </b> </a> <br><br>
+
+        <a href="./ContactPage.html" class="footer_text" > <b> צור קשר </b> </a> <br><br>
+  
+        <div id= "Insta">
+            <a target="_blank" href="https://www.instagram.com/roy_avigdorov/" class="footer_text" > <b> @shoko_box     </b></a> <img src="../img/instagram.png" alt="instagram" style="width: 20px;"></a>    
+        </div>    
+         
+    </div>
+
+
+
+</body>
+</html>

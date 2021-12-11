@@ -1,0 +1,199 @@
+
+body{
+    background-color: #EDE9E2; 
+    font-family: Calibri, serif;
+    font-size: 15px;
+    color: rgb(199, 146, 116);
+}
+
+.header {
+  color: rgb(148, 102, 86);
+  width: 50%;
+  text-align: center;
+  margin-right: 28%;
+}
+
+
+
+
+
+
+
+
+/*----------------------The top menu-------------------*/
+
+.TopNavigationBar {
+  position: -webkit-sticky;
+  position: sticky;
+    background-color: #E2DAD5;
+    display:flex;
+    box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.5);
+    text-align: center;
+    top: 0;
+    justify-content:flex-start ;
+    height: 120px;
+    z-index: 2;
+}
+
+#logo_in_the_side{
+    margin-right: 60%;
+    margin-top: -2.5%;
+}
+
+/*---------------------buttons top bar-------------------*/
+
+/*---------open button---------*/
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #E2DAD5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  .openbtn:hover {
+    background-color: #E2DAD5;
+  }
+
+  
+/*---------classes button---------*/
+.classesbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #E2DAD5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-top:0;
+  }
+  .classesbtn:hover {
+    background-color: #E2DAD5;
+  }
+
+  
+  /*---------shopping cart button---------*/
+  .shoppingCartbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #E2DAD5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  .shoppingCartbtn:hover {
+    background-color: #E2DAD5;
+  }
+  
+
+  /*---------deliverybtn button---------*/
+  .deliverybtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #E2DAD5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-top:0;
+  }
+  .deliverybtn:hover {
+    background-color: #E2DAD5;
+  }
+  
+/*---------aboutUsbtn button---------*/
+  .SignInbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #E2DAD5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-top:0;
+  }
+  .SignInbtn:hover {
+    background-color: #E2DAD5;
+  }
+
+/*----------------------The sidebar menu -------------------*/
+
+.sideNavigationBar {
+    height: 60%;
+    margin-top: 5%;
+    margin-right: 0.7%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(225, 176, 156);
+    overflow-x: hidden;
+    padding-top: 100px;
+    box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.5);
+    text-align: right;
+    transition: 0.5s;
+  }
+  
+  
+  .sideNavigationBar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(59, 18, 18);
+    display: block;
+    transition: 0.5s;
+    font-family: Calibri, serif;
+  }
+  
+  
+  .sideNavigationBar a:hover {
+    color: white;
+  }
+  
+  
+  .sideNavigationBar .closebtn {
+    position: absolute;
+    top: 80px;
+    left: 45px;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sideNavigationBar {padding-top: 15px;}
+    .sideNavigationBar a {font-size: 18px;}
+  }
+  
+
+/*-------------------------------------------------footer -------------------------------------*/
+  .footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    margin-top: 120px;
+    border-top: 2px solid rgb(148, 102, 86) ;
+    background-color: rgba(255, 255, 255, 0.795) ;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(148, 102, 86);
+}
+
+.footer_text{
+    font-size: 20px;
+    text-decoration:none;
+    text-align: center;
+    color: rgb(148, 102, 86);
+}
+
+/*----------------------*//* For Small Screens *//*-------------------*/
+
+@media only screen and (max-height: 450px) {
+  .main {font-size:10px;}
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  .sideNavigationBar {padding-top: 15px;}
+  .sideNavigationBar a {font-size: 18px;}
+}
+
+
+
